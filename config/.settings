@@ -1,0 +1,17 @@
+{
+    "projectName": "apex-bootcamp",
+    "username": "jsonapex1@developer.com",
+    "id": "80524820-b5df-11e7-b195-8176f65a038f",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na73.salesforce.com",
+    "workspace": "C:\\Users\\AndersonJason\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
