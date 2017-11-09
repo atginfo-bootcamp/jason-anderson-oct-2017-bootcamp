@@ -73,8 +73,9 @@ public with sharing class ContactTriggerHelper {
 
 		//if(!accountIds.isEmpty())
 		if(accountIds.size() > 0){
-			accounts = [SELECT Id, Current_number_of_contacts__c,
-				(SELECT Id FROM Contacts)
+			accounts = [
+			SELECT Id, Current_number_of_contacts__c,
+			(SELECT Id FROM Contacts)
 			FROM Account
 			WHERE Id
 			IN :accountIds

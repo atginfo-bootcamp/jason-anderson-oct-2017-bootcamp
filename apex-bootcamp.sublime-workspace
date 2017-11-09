@@ -3,31 +3,40 @@
 	{
 		"selected_items":
 		[
+			[
+				"leads",
+				"leadsList"
+			],
+			[
+				"new",
+				"newLead"
+			],
+			[
+				"lead",
+				"leadsList"
+			],
+			[
+				"Lead",
+				"LeadList"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/package.xml",
+			"file": "src/triggers/LeadTrigger.trigger",
 			"settings":
 			{
-				"buffer_size": 209,
+				"buffer_size": 1504,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/classes/Day0Example.cls",
+			"file": "src/classes/LeadTriggerHelper.cls",
 			"settings":
 			{
-				"buffer_size": 71,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/Day0Example.cls-meta.xml",
-			"settings":
-			{
-				"buffer_size": 174,
+				"buffer_size": 2105,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -74,10 +83,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/AndersonJason/Documents/apex-bootcamp"
+		"/C/Users/AndersonJason/Documents/apex-bootcamp",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/triggers"
 	],
 	"file_history":
 	[
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/package.xml",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/Day0Example.cls",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/Day0Example.cls-meta.xml",
 		"/C/Users/AndersonJason/Desktop/firstPage.html",
 		"/C/Users/AndersonJason/Desktop/common.xsd.xml",
 		"/C/Users/AndersonJason/Desktop/public class StringArrayTest {",
@@ -98,7 +113,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -112,6 +127,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t\t//public static void afterUpdate(List<Lead> leadsList, Map<Id, Lead> oldLeadsMap){",
+			");\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -129,85 +146,58 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/package.xml",
+					"file": "src/triggers/LeadTrigger.trigger",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 209,
+						"buffer_size": 1504,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								921,
+								921
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.sublime-syntax"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/classes/Day0Example.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 71,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/classes/Day0Example.cls-meta.xml",
+					"buffer": 1,
+					"file": "src/classes/LeadTriggerHelper.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 174,
+						"buffer_size": 2105,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								174,
-								174
+								647,
+								647
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.sublime-syntax"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -221,7 +211,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -252,7 +242,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 327.0
+		"height": 113.0
 	},
 	"output.find_results":
 	{
@@ -262,7 +252,7 @@
 	"project": "apex-bootcamp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
