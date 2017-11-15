@@ -172,5 +172,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "Person.cls": {
+        "id": "01p1I00000AtshEQAR",
+        "name": "Person",
+        "createdDate": "2017-11-14T23:21:39.000+0000",
+        "createdById": "0051I000000iSkNQAU",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000iSkNQAU",
+        "lastModifiedDate": "2017-11-15T01:04:58.000+0000",
+        "fullName": "Person",
+        "fileName": "unpackaged/classes/Person.cls",
+        "createdByName": "jason anderson",
+        "lastModifiedByName": "jason anderson",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
