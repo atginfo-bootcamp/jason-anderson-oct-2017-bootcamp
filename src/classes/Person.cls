@@ -31,6 +31,7 @@ public class Person {
 		//this.name = defaultName;
 	}
 	//overloaded constructor
+	//Constructor is a  constructor is an instance method that usually has the same name as the class, and can be used to set the values of the members of an object, either to default or to user-defined values
 	//Person fred = new Person ('fred', 'foo@bar.com');
 	public Person(String defaultName, String defaultEmail) {
 		name = defaultName;
