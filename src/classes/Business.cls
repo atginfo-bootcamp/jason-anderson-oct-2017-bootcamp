@@ -8,12 +8,15 @@ public with sharing class Business {
 		private List<Employee> employees;
 
 
-	public Business() {
+	public Business(String locationName, String address, String phoneNumber) {
 		//require all fields are passed in
 		//set all field values
 		///except for employee
 		//this keyword
-
+		this.locationName = locationName;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
+		//this.employees = employees;
 		//code below initializes the list so we can add employees to it
 
 		this.employees = new List<Employee>();
@@ -33,8 +36,14 @@ public with sharing class Business {
 
 	}
 
-	public void removeEmployee (List<Employee> employeeId){
-	
+	public void removeEmployee (Integer employeeId){
+		for (Integer i = 0; i < employees.size(); i++) {
+			Employee employee = employees.get(i);
+				if (employee.getEmployeeId() == employeeId){
+					employees.remove(i);
+					break;
+				}
+		}
 	}
 
 	public List<Employee> getEmployees(){
@@ -49,7 +58,13 @@ public with sharing class Business {
 
 	public void printLocationInfo(){
 		//print out all the location information
+		System.debug('location Name' + locationName);
+		System.debug('address' + address);
+		System.debug('phone Number' + phoneNumber);
 
+		for (Employee employee : employees){
+			employee.printEmployeeInfo();
+		}
 	}
 
 	///Work on very last if finished with all other work

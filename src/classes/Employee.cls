@@ -8,6 +8,7 @@ public with sharing class Employee {
 	private String title;
 	private String firstName;
 	private String lastName;
+
 	private Date hireDate;
 	private String status;
 	private Datetime statusDate;
@@ -24,12 +25,24 @@ public with sharing class Employee {
 		EMPLOYEE_ID = nextEmployeeIdNumber;
 		nextEmployeeIdNumber++;
 	}
+		//alternative get and set syntax
+		//this.lastName = lastName {get, set;}
+		// can also add additional logic into the method to add business logic
+		//
 
 
 	public Integer getEmployeeId() {
 		return EMPLOYEE_ID;
 
 	}
+	public void setStatus(String status) {
+		this.status = status;
+		statusDate = Datetime.now(); 
+}
+	public String getStatus() {
+		return status;
+}
+
 	public void printEmployeeInfo() {
 		System.debug('title: ' + title); 
 		System.debug('First Name: ' + firstName); 
