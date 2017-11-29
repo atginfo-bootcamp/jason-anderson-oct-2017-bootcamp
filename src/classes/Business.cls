@@ -35,7 +35,7 @@ public with sharing class Business {
 		this.employees.addAll(employees);
 
 	}
-
+	//loop through list and look for the id related to the employee in the list
 	public void removeEmployee (Integer employeeId){
 		for (Integer i = 0; i < employees.size(); i++) {
 			Employee employee = employees.get(i);
