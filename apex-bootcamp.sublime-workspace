@@ -23,6 +23,7 @@
 	},
 	"buffers":
 	[
+<<<<<<< Updated upstream
 		{
 			"file": "src/triggers/LeadTrigger.trigger",
 			"settings":
@@ -76,6 +77,8 @@
 				"line_ending": "Unix"
 			}
 		}
+=======
+>>>>>>> Stashed changes
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -97,7 +100,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 392.0
+		"width": 444.0
 	},
 	"console":
 	{
@@ -118,16 +121,26 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< Updated upstream
 		"/C/Users/AndersonJason/Documents/apex-bootcamp",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/config",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/triggers"
+=======
+>>>>>>> Stashed changes
 	],
 	"file_history":
 	[
-		"/C/Users/AndersonJason/Documents/apex-bootcamp/config/.local_store",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/Day5Maps.cls",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/pages/Day14VisualForcePage.page",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/apexBootCampUnitTest.cls",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/contactTriggerHelperTests.cls",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/ContactTriggerHelper.cls",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/package.xml",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/LeadTriggerHelper.cls",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/triggers/LeadTrigger.trigger",
+		"/C/Users/AndersonJason/Documents/apex-bootcamp/config/.local_store",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/Day0Example.cls",
 		"/C/Users/AndersonJason/Documents/apex-bootcamp/src/classes/Day0Example.cls-meta.xml",
 		"/C/Users/AndersonJason/Desktop/firstPage.html",
@@ -183,9 +196,9 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
+<<<<<<< Updated upstream
 				{
 					"buffer": 0,
 					"file": "src/triggers/LeadTrigger.trigger",
@@ -357,6 +370,8 @@
 					"stack_index": 4,
 					"type": "text"
 				}
+=======
+>>>>>>> Stashed changes
 			]
 		}
 	],
@@ -412,6 +427,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"day",
+				"src\\classes\\Day5Maps.cls"
+			]
 		],
 		"width": 0.0
 	},
