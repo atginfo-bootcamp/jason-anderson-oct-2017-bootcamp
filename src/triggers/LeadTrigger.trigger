@@ -48,4 +48,3 @@ trigger LeadTrigger on Lead (before insert, after update
 				LeadTriggerHelper.afterUpdate(Trigger.new, Trigger.oldMap);
 		}
 }
-
