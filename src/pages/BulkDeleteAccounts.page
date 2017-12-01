@@ -1,0 +1,50 @@
+<apex:page showHeader="true" sidebar="true" controller="BulkDeleteAccountsController">
+
+
+	<apex:form>
+
+<apex:pageBlock title="Create New Accounts" id="create-accounts">
+	<apex:pageBlockSection columns="1">
+
+		<apex:inputText label="Name" value="{!newInputName}" />
+		<apex:inputText label="Number of Accounts" value="{!newInputAccounts}"/>
+
+		<apex:commandButton action="{!saveNewAccounts}" value="Submit"/>
+		
+	</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+		<apex:actionFunction
+			action="{! toggleSelectAll}"
+			name="toggleSelectAll"
+			reRender="query-accounts"
+			>
+		</apex:actionFunction>
+
+	<apex:pageBlock title="Accounts" id="query-accounts">
+
+		<apex:pageBlockButtons location="both">
+			<apex:commandButton action="{! deleteSelectedAccounts }" value="Delete Selcted Accounts" />
+
+		</apex:pageBlockButtons>
+
+			<apex:pageBlockTable value="{! accountWrappers }" var="currAccountWrapper">
+
+				<apex:column>
+					<apex:facet name="header">
+						<apex:inputCheckbox value="{! selectAll }" onchange="toggleSelectAll()" />
+					</apex:facet>
+					<apex:inputCheckbox value="{! currAccountWrapper.isChecked}"/>
+				
+				</apex:column>
+
+				<apex:column value="{! currAccountWrapper.account.Id }" />
+				<apex:column value="{! currAccountWrapper.account.Name }" />
+				<apex:column value="{! currAccountWrapper.account.Type}" />
+
+			</apex:pageBlockTable>
+
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>
