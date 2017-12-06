@@ -49,6 +49,7 @@ public with sharing class Day3ListsAndLoops {
 		uniqueNames.add('jdog');
 		uniqueNames.add('jdog');
 
+		//below will return 1 for size based on the similarity bw all names provided
 		Integer setSize = uniqueNames.size();
 
 		System.debug('uniqueNames: ' + uniqueNames);
