@@ -38,8 +38,8 @@ public with sharing class Day4CreatAccountsWithContacts {
 	public static Account createAccount(Integer accountNameSuffix) {
 		String accountName = 'myAccount-' + accountNameSuffix;
 		Account myAccount = new Account(Name = accountName);
-System.debug('My account ' + myAccount);
-		return myAccount;
+			System.debug('My account ' + myAccount);
+			return myAccount;
 	}
 
 	public static Contact createContact(Id accountID, Integer contactNumber){
