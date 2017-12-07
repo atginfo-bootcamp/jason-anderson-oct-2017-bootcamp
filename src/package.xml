@@ -20,6 +20,7 @@
 		<members>BulkDeleteAccountsController</members>
 		<members>AccountAndOppCreatorController_ANDERS</members>
 		<members>AccountAndOppCreatorController_ANDERSTST</members>
+		<members>passByRefExample</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
