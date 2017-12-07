@@ -49,6 +49,7 @@ public with sharing class Day3ListsAndLoops {
 		uniqueNames.add('jdog');
 		uniqueNames.add('jdog');
 
+		//below will return 1 for size based on the similarity bw all names provided
 		Integer setSize = uniqueNames.size();
 
 		System.debug('uniqueNames: ' + uniqueNames);
@@ -102,17 +103,18 @@ public static void executeLoops() {
 
 		insert myAccount;
 
+		//statement below will capture ID now that it is in the DB(after insert)
 		System.debug('myAccount before insert: ' + myAccount);
 
 	}
-//This is the query for looking at Accounts and certain information (using soql/sosl)
+		//This is the query for looking at Accounts and certain information (using soql/sosl)
 	public static void updateExistingAccount()
 	{
 		List<Account> queriedAccounts = [
 			 SELECT id, Name, Type
 			 FROM Account
 			 WHERE Name = 'ATG'
-			 LIMIT 1
+			 LIMIT 1 //limits to only 1 return
 			 ];
 		System.debug(queriedAccounts);
 
