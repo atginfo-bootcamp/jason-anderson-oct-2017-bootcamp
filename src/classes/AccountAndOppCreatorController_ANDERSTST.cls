@@ -124,6 +124,7 @@ private class AccountAndOppCreatorController_ANDERSTST {
 		controller.saveData();
 
 		System.assertEquals(1, ApexPages.getmessages().size());
+
 }
 	@isTest static void testCloseDateRequired() {
 		AccountAndOppCreatorController_ANDERS controller = initData();
@@ -151,19 +152,29 @@ private class AccountAndOppCreatorController_ANDERSTST {
 	}
 
 
-		@isTest static void testOppNameRetainsValue() {
+	@isTest static void testOppNameRetainsValue() {
 		// Implement test code
 		//ensure that specififed Opp name retains value - not overwritten
+		AccountAndOppCreatorController_ANDERS controller = initData();
+
+		String oppRetainerCheck = controller.opportunity.Name;
+		//controller.opportunity.Name = null;
+
+		controller.saveData();
+
+		System.assertEquals(controller.savedOpportunity.Name, oppRetainerCheck);
 
 	}
-		@isTest static void testSuccessPath() {
+	@isTest static void testSuccessPath() {
 		// Implement test code
 		//Test that everything was created
 		//test that all values were reinitialized
 		//test that bottom section of UI is shown
 		//test that bottom of UI is correct data
-		//test atht init values were set
-
+		//test that init values were set
+		AccountAndOppCreatorController_ANDERS controller = initData();
+			
+		controller.saveData();
 
 
 	}
