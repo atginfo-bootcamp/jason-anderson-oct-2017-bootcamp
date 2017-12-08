@@ -25,6 +25,11 @@
 		<members>Dog</members>
 		<members>Fish</members>
 		<members>AnimalGod</members>
+		<members>BackToTheFuture</members>
+		<members>AsyncExecutionExample </members>
+		<members>AsyncExecutionExample1</members>
+		<members>CreateContactForAccountBatch</members>
+		<members>CreateAccountSchedulable</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
