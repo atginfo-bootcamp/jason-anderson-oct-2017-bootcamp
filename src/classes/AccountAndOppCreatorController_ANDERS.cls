@@ -62,7 +62,10 @@ public with sharing class AccountAndOppCreatorController_ANDERS {
 		}
 
 		//Populate the opportunity name with the Account name
-		opportunity.name = account.name;
+		if(opportunity.name ==null){
+			opportunity.name = account.name;
+		}
+		
 
 		//Only proceed if none of the required fields were left null
 		if(!error){
